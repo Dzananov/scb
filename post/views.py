@@ -1,10 +1,13 @@
 from django.db.models import Count
 from rest_framework import generics, permissions, filters
+from django_filters.rest_framework import DjangoFilterBackend
 from scb.permissions import IsOwnerOrReadOnly
 from .models import Post
 from .serializers import PostSerializer
 
 """ Shows all posts if logged in. Can create posts"""
+
+
 class PostList(generics.ListCreateAPIView):
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
@@ -14,6 +17,11 @@ class PostList(generics.ListCreateAPIView):
     filter_backends = [
         filters.OrderingFilter,
         filters.SearchFilter,
+        DjangoFilterBackend,
+    ]
+    filterset_fields = [
+        'owner__followed__owner__profile',
+        'owner__profile',
     ]
     search_fields = [
         'owner__username',
@@ -27,7 +35,10 @@ class PostList(generics.ListCreateAPIView):
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
 
+
 """ Detail view of posts to be able to delte or edit"""
+
+
 class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = PostSerializer
     permission_classes = [IsOwnerOrReadOnly]
