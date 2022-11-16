@@ -58,7 +58,7 @@ REST_AUTH_SERIALIZERS = {'USER_DETAILS_SERIALIZER': 'scb.serializers.CurrentUser
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = ['localhost', 'saddleclubbackend.herokuapp.com']
 
