@@ -7,11 +7,11 @@ class Post(models.Model):
     post model with category section
     """
     category = [
-        ('Horse gear', 'horse Equipment'),
-        ('riders gear', 'Riders gear'),
-        ('horse food', 'Horse food'),
-        ('exercise out', 'Exercise'),
-        ('horse care', 'Horse care'),
+        ('gear', 'gear'),
+        ('rider', 'rider'),
+        ('food', 'food'),
+        ('exercise', 'exercise'),
+        ('horse', 'Horse'),
         ('selfcare', 'Selfcare'),
     ]
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
