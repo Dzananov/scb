@@ -1,4 +1,4 @@
-Foody Hamburger Resturant is A fictional resturante located in Malmö, Sweden. A app has been designed to informe the user about the resturant and what they can expect, give information about what kind of food the resturant serves, user are able to become members and reserve a table and afterwards users can manage their bookings
+A backend for a app that is supposed to connect horselovers all over the world. For our app to be ble to work there has to be a backend that can render data from the frontend and send it back to the frontend.
 
 # Content
 * [User Story](#User-Story)
@@ -64,14 +64,7 @@ I added pictures and logo
 
 ## Validator
 
-* PEP8 check. I had some error regarding the to long lines in my codes. But also I got error for not having a whitespace around operator '=' on line 22,24,25,55. If I put I whitespace there my code do not work proparly.
-![bild](readme.images/pep8valdiator.jpg)
-
-* W3 HTML Validator: I got errors on all my static files. I choose to ignore them because the images worked just fine.
-![bild](readme.images/htmlvali.jpg)
-
-* Jigsaw validator for CSS o errors detected
-![bild](readme.images/cssvali.jpg)
+* PEP8 check. I had some error regarding the to long lines in my codes. 
 
 ## Languages
 * Python
@@ -109,7 +102,7 @@ I did testing on my webpage troughout the project: Testings performed:
 |To se if the url path workes in profile app| Open app in preview browser and wrote "/profiles" on the end of url shown i preview| good |
 |To se if the url path workes in post app||Open app in preview browser and wrote "/post" on the end of url shown i preview| Open app in preview browser| good |
 
-
+![bild](/scb/readmeimg/testcase2back.jpg)
 
 
 ## Bugs
