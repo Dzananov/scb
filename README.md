@@ -1,108 +1,162 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Foody Hamburger Resturant is A fictional resturante located in Malmö, Sweden. A app has been designed to informe the user about the resturant and what they can expect, give information about what kind of food the resturant serves, user are able to become members and reserve a table and afterwards users can manage their bookings
 
-Welcome Dzananov,
+# Content
+* [User Story](#User-Story)
+  * [Goal](#Goal)
+  * [User Stories](#User-Stories)
+ 
+* [Design](#Design)
+ * [Colour](#Colour)
+ * [Font](#Font)
+ * [Wireframe](#Wireframe)
+* [Features](#Features)
+ * [Existing-Features](#Existing-Features)
+ * [Future-Features](#Future-Features)
+* [Technology](#Technology)
+ * [Testing](#Testing)
+ * [Bugs](#Bugs)
+* [Credits](#Credits)
+* [Deployment](#Deployment)
+ * [Heroku](#Heroku)
+ * [Github](#Github)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# User Story
+## Goal
+Main Goal of the project is to provide a backend to my frontend. The backend is supposed to build up the models and the whole base of the app. App works as a post-picture-blog for horselovers where user can sign up and post pictures with content. Other users can then comment eachothers posts.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## User Stories
+* User should be able to sign up and later on sign in and sign out: 
+As a user I can sign up so that i can sign in, sign out and book a table
+* When signed in user should se a option for watching their feed, press home, add post, sign out.
+* When a post is posted: 
+As a user I can edit my post so that I can make changes
+As a user I can see my post so that I can manage them
+<!-- As a user I can delete my post so that I dont have that post anymore
+As a loged in site visiter I can add and delet comments -->
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+# Design
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Design is maninly code Institution Boilerplate styling codes with miner changes:
+I added pictures and logo
+<!-- I changed colortexting and navbar -->
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+# Features
+## Existing Features
+* a Profile/user app that can take user information.
+* A comment app that can take comment information
+* A follower app that can take follow signals from the frontend
+* A post app that take information regarding post component in the frontend.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Future Features
 
-------
+* Add a rate app. As a User I want to be able to rate a post from 1-5.
+* as a post owner I want to be able to se when and who rates my post.
 
-## Release History
+# Technology
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Validator
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* PEP8 check. I had some error regarding the to long lines in my codes. But also I got error for not having a whitespace around operator '=' on line 22,24,25,55. If I put I whitespace there my code do not work proparly.
+![bild](readme.images/pep8valdiator.jpg)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* W3 HTML Validator: I got errors on all my static files. I choose to ignore them because the images worked just fine.
+![bild](readme.images/htmlvali.jpg)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Jigsaw validator for CSS o errors detected
+![bild](readme.images/cssvali.jpg)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Languages
+* Python
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+<br>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Frameworks
+  * Python Built-in Modules
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* Packages
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  * cloudinary
+  * dj-database-url
+  * dj3-cloudinary-storage
+  * Django
+  * django-allauth
+  * gunicorn
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* Libraries
+  * Allauth
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* Programs
+  * GitPod:
+  * Gitpod was used as IDE to commit and push the project to GitHub.
+  * GitHub:
+  * Was used for all storing and backup of the code pertaining to the project.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Testing
+I did testing on my webpage troughout the project: Testings performed:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+|Test | What to do | Status |
+|----|:---------|:-------|
+|Tested my database | on Herouku i clicked on resources on the navbar and than on the added postgres link. It will display a page with a succsess message  | good |
+|To se if the url path workes in profile app| Open app in preview browser and wrote "/profiles" on the end of url shown i preview| good |
+|To se if the url path workes in post app||Open app in preview browser and wrote "/post" on the end of url shown i preview| Open app in preview browser| good |
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+## Bugs
+|Test | What to do | Status |
+|----|:---------|:-------|
+|Did not render to the URL| My Profile Url link did not work. I Typed it in on my preview url as /profiles/. Got an error. Went to the main url in app "scb" and saw a typing error insted of "...profiles" it said ".../profile".| fixed |
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+|
 
-**How will this affect me?**
+# Deployment
+## Heroku
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+  * Logged in to my account on herouku
+  * At dashboard I created a new app called "saddleclubbackend" and chose region Europe
+  * In Resources I searched for PostGres in the add-ons to use as my database
+  * In settings I revelde my config vars 
+  * Stored seacret_key in env.py 
+  * added seacret_key to config vars
+  * I Connected the database from Herouku(confik vars) and past them in my env.py and I also created a secret key in env.py and copy past the same in my config vars.
+  * I referenced this in settings.py
+  * I added the value of 8000 and key to config vars
+  * I connected cloudinary to env.py and my herouku with the same value and key
+  * Added Allowed Hosts in settings
+  * Went to the deploytab in herouku
+  * searched for my github repo(my github was already connected)
+  * Then clicked on deploy branch 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Github
+  * Log in to github
+  * Go to repositaries
+  * Click on relevant repositery
+  * Go to settings
+  * Click on pages at the sidebar
+  * Choose to save on 'main'
+  * Save
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+# Credits
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* 
+  * Code institutes walktrough project "Hello Rest" Was and inspiration when building the view
+  * Code institut for profile app and followers app
+  * Django was used for the fuctionalitis 
+  * Sign in/sing up and sign out codes are from allauth and the css are from the walktrough project
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Thanks to
+* Code Institution for education
+* My mentor for mentroing and pushing me to always try my best
+* Tutor support for all help resolving issus
