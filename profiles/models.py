@@ -10,8 +10,7 @@ class Profile(models.Model):
     name = models.CharField(max_length=255, blank=True)
     content = models.TextField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default='https://res.cloudinary.com/dqgykcdbd/image/upload/v1673353937/default_profile_mzoqgl.jpg'
-    )
+        upload_to='images/')
 
     class Meta:
         ordering = ['-created_at']
